@@ -1,0 +1,33 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Build'
+
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = [ "\\.Rmd$", "\\.Rmarkdown$", "_cache$" ]
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+note = "/note/:year/:month/:day/:slug/"
+post = "/post/:year/:month/:day/:slug/"
+
+[[menu.main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[menu.main]]
+name = "Resume"
+url = "resume"
+weight = 2
+
+
+[params]
+description = "Build."
+footer = "&copy; [Antwi Gambrah](https://antwigambrah.github.io) 2020 -- {Year} | [Github](https://github.com/antwigambrah) | [Twitter](https://twitter.com/Bobskidoes)"
+
+[markup.highlight]
+codeFences = false
+
+[markup.goldmark.renderer]
+unsafe = true
